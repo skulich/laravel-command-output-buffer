@@ -1,0 +1,9 @@
+parameters:
+    level: max
+    paths:
+        - src
+
+    checkOctaneCompatibility: true
+
+    ignoreErrors:
+        - identifier: trait.unused
