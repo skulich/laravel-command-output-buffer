@@ -24,7 +24,7 @@ trait OutputBuffer
 
         $this->buffered = true;
 
-        if (func_num_args() > 0 && $context === null) {
+        if (func_num_args() > 0 && ! $context instanceof \SplStack) {
             $context = new class extends \SplStack
             {
                 public function __destruct()
